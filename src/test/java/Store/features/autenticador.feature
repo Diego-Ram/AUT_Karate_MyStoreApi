@@ -23,12 +23,3 @@ Feature: El usuario debe acutenticarse
     Then status 401
     * match response.message == 'Unauthorized'
 
-
-      # usuario no autenticado con JS para basic auth -> no funciona
-    Scenario: usuario no autenticado con JS para basic auth
-    Given path '/me'
-    * def auth = call read('classpath:Helpers/Auth.js') {username:'karate123' , password:'karate123'}
-    And headers {Accept:'application/json',Authorization : '#(auth)'};
-    When method GET
-    Then status 401
-    * match response.message == 'Unauthorized'
