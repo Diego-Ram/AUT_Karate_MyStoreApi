@@ -1,7 +1,7 @@
 # AUT_Karate_MyStoreApi
 
 ## General Information
-This project is about the karate automation for the MyStoreApi endpoints.
+This project is about the example of karate automation for the MyStoreApi endpoints.
 ***
 ## Requirements
 - Java 1.8.0
