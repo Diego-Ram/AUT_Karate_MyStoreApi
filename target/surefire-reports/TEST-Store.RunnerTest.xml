@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Store.RunnerTest" time="7.988" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi\target\test-classes;C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi\target\classes;C:\Users\Diego Ramirez\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\Diego Ramirez\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Diego Ramirez\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Diego Ramirez\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Diego Ramirez\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Diego Ramirez\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\Diego Ramirez\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\Diego Ramirez\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\Diego Ramirez\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Diego Ramirez\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Diego Ramirez\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Diego Ramirez\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Diego Ramirez\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\Diego Ramirez\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\net\datafaker\datafaker\2.0.1\datafaker-2.0.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Diego Ramirez\.m2\repository\net\masterthought\cucumber-reporting\5.7.6\cucumber-reporting-5.7.6.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\Diego Ramirez\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Diego Ramirez\.m2\repository\joda-time\joda-time\2.12.2\joda-time-2.12.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\codehaus\plexus\plexus-utils\3.5.1\plexus-utils-3.5.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\jsoup\jsoup\1.16.1\jsoup-1.16.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20220608.1\owasp-java-html-sanitizer-20220608.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Diego Ramirez\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Diego Ramirez\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Diego Ramirez\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Diego Ramirez\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Diego Ramirez\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Diego Ramirez\AppData\Local\Temp\surefire16509611111742535649\surefirebooter-20230802114512224_3.jar C:\Users\Diego Ramirez\AppData\Local\Temp\surefire16509611111742535649 2023-08-02T11-45-11_954-jvmRun1 surefire-20230802114512224_1tmp surefire_0-20230802114512224_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi\target\test-classes;C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi\target\classes;C:\Users\Diego Ramirez\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\Diego Ramirez\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Diego Ramirez\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Diego Ramirez\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\Diego Ramirez\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Diego Ramirez\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\Diego Ramirez\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Diego Ramirez\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Diego Ramirez\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\Diego Ramirez\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\Diego Ramirez\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\Diego Ramirez\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Diego Ramirez\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Diego Ramirez\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Diego Ramirez\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Diego Ramirez\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\Diego Ramirez\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\Diego Ramirez\.m2\repository\net\datafaker\datafaker\2.0.1\datafaker-2.0.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Diego Ramirez\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Diego Ramirez\.m2\repository\net\masterthought\cucumber-reporting\5.7.6\cucumber-reporting-5.7.6.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\Diego Ramirez\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Diego Ramirez\.m2\repository\joda-time\joda-time\2.12.2\joda-time-2.12.2.jar;C:\Users\Diego Ramirez\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Diego Ramirez\.m2\repository\org\codehaus\plexus\plexus-utils\3.5.1\plexus-utils-3.5.1.jar;C:\Users\Diego Ramirez\.m2\repository\org\jsoup\jsoup\1.16.1\jsoup-1.16.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20220608.1\owasp-java-html-sanitizer-20220608.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Diego Ramirez\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Diego Ramirez\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Diego Ramirez\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Diego Ramirez\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Diego Ramirez\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Diego Ramirez\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Diego Ramirez"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Diego Ramirez\AppData\Local\Temp\surefire16509611111742535649\surefirebooter-20230802114512224_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+7"/>
+    <property name="user.name" value="Diego Ramirez"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.8+7"/>
+    <property name="localRepository" value="C:\Users\Diego Ramirez\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\DIEGOR~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="C:\Users\Diego Ramirez\IdeaProjects\UAT_Karate_MyStoreApi"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-11.0.20.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-8.0.382.5-hotspot\bin;C:\Program Files (x86)\Eclipse Adoptium\jre-8.0.362.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Gradle\gradle-8.2\bin;C:\Maven\apache-maven-3.9.3\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\Users\Diego Ramirez\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.8+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="Store.RunnerTest" time="7.955">
+    <failure message="Cannot read the array length because &quot;src&quot; is null&#10;classpath:Store/features/autenticador.feature:30 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Cannot read the array length because "src" is null
+classpath:Store/features/autenticador.feature:30 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:560)
+	at Store.RunnerTest.testParallel(RunnerTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[11:45:14.442 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:45:14.454 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+11:45:15.552 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.594 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.601 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.606 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.610 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:16.249 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 163
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Mustard",
+  "price": 437,
+  "manufacturer": "International Metrics Associate",
+  "category": "Pappardelle alla Bolognese",
+  "description": "Abel N. Willan",
+  "tags": "red"
+}
+
+
+11:45:16.249 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 144
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Fish",
+  "price": 183,
+  "manufacturer": "Legacy Communications Director",
+  "category": "Chicken Fajitas",
+  "description": "Al Fresco",
+  "tags": "plum"
+}
+
+
+11:45:16.249 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/auth/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 55
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "username": "leora.kemmer",
+  "password": "Frank N. Sense"
+}
+
+
+11:45:16.249 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 154
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Crustaceans and molluscs",
+  "price": 315,
+  "manufacturer": "Lead Factors Engineer",
+  "category": "Tiramisù",
+  "description": "Trina Corder",
+  "tags": "violet"
+}
+
+
+11:45:16.249 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 137
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Eggs",
+  "price": 365,
+  "manufacturer": "Corporate Applications Manager",
+  "category": "Lasagne",
+  "description": "Matt Tress",
+  "tags": "cyan"
+}
+
+
+11:45:16.930 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 669
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 231
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < x-amzn-RequestId: 697cdd05-ef58-4f42-aeb1-05bdd9fcff60
+1 < x-amzn-Remapped-Content-Length: 231
+1 < x-amz-apigw-id: JCo01FcLIAMFVsw=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"e7-qlshAJUnWi+5mVkIay/sqslc+tU"
+1 < X-Amzn-Trace-Id: Root=1-64ca881e-6ec8d34d36d4e34d69127da9;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 d469b242ea9735def0b70af5a09c94c0.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: SEyJMoelQjWaq9oLAq-JW0rZFsOTBHvtdRH3FVLxWDCWdZViNy5PRA==
+{
+  "id": 1055385,
+  "name": "Mustard",
+  "description": "Abel N. Willan",
+  "manufacturer": "International Metrics Associate",
+  "category": "Pappardelle alla Bolognese",
+  "price": 437,
+  "created": "2023-08-02T16:45:18.000Z",
+  "status": "active",
+  "tags": "red"
+}
+
+
+11:45:16.964 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://mystoreapi.com/catalog/product/1055385
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:17.040 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 788
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 222
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < x-amzn-RequestId: 297d760b-650f-4e08-9654-11ac6e919218
+1 < x-amzn-Remapped-Content-Length: 222
+1 < x-amz-apigw-id: JCo02EvWIAMFe2A=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"de-zJUSmfvOSuaDVWHxiZPNXw7AM5c"
+1 < X-Amzn-Trace-Id: Root=1-64ca881e-060bd86e37620b19406cff13;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 34a80a466446d2f079dddf146048d8b8.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: ghW_ijm4-Ys7B-KEtPhrIjIrKnXwAow6zHQWbz4zO4FRdOy6ULaZmQ==
+{
+  "id": 1055387,
+  "name": "Crustaceans and molluscs",
+  "description": "Trina Corder",
+  "manufacturer": "Lead Factors Engineer",
+  "category": "Tiramisù",
+  "price": 315,
+  "created": "2023-08-02T16:45:18.000Z",
+  "status": "active",
+  "tags": "violet"
+}
+
+
+11:45:17.041 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 790
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 205
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < x-amzn-RequestId: 7ac90817-62e0-4ad7-869d-1c67a3e641bf
+1 < x-amzn-Remapped-Content-Length: 205
+1 < x-amz-apigw-id: JCo02FOOIAMFnMw=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"cd-ifIoZeZ0d2nq8DdYZqhxzikdFIs"
+1 < X-Amzn-Trace-Id: Root=1-64ca881e-4aed558145509d966e76eb05;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 20a4932de861d5f21104db34596c9034.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: YdI2u0EcQNYXSSuZk5s9dJFIbZS_MwG5btx6UpVFKZZGebXUss_V0A==
+{
+  "id": 1055386,
+  "name": "Eggs",
+  "description": "Matt Tress",
+  "manufacturer": "Corporate Applications Manager",
+  "category": "Lasagne",
+  "price": 365,
+  "created": "2023-08-02T16:45:18.000Z",
+  "status": "active",
+  "tags": "cyan"
+}
+
+
+11:45:17.055 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 803
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 138
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < x-amzn-RequestId: 3f67604d-f209-41b6-a301-f6cf53562286
+1 < x-amzn-Remapped-Content-Length: 138
+1 < x-amz-apigw-id: JCo02FocoAMFagQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"8a-m/tRJCG/drygCry9++qL1REXJjs"
+1 < X-Amzn-Trace-Id: Root=1-64ca881e-685fa4ac4adac1c06ceb5506;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 2ad057bf121e413ac1cb61fa8b16d64a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: ESNrUbkhk2cYwQPkPKXWB4FOKicH1ymgGURAAWmYSKGfmsP6lQ16pw==
+{
+  "id": 1024,
+  "username": "leora.kemmer",
+  "created": "2023-08-02T16:45:18.000Z",
+  "password": "3949319d677874697f840423bca4de70",
+  "status": "active"
+}
+
+
+11:45:17.057 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 803
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 212
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < x-amzn-RequestId: 9c358f9f-82fa-4b90-8cee-6460fbc7c1d8
+1 < x-amzn-Remapped-Content-Length: 212
+1 < x-amz-apigw-id: JCo02G-8IAMF4YA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"d4-LhTbz2LcofMRDKDrtumfUu3CIU0"
+1 < X-Amzn-Trace-Id: Root=1-64ca881e-01701971304fdb21740483c7;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:18 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 22f93d92a360e7503437b796bfa15524.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: mEDd55067LQRcaQ7FURP8Q9CKDdi3mi1hW35nLUT6wJCDSDakEx07Q==
+{
+  "id": 1055388,
+  "name": "Fish",
+  "description": "Al Fresco",
+  "manufacturer": "Legacy Communications Director",
+  "category": "Chicken Fajitas",
+  "price": 183,
+  "created": "2023-08-02T16:45:18.000Z",
+  "status": "active",
+  "tags": "plum"
+}
+
+
+11:45:17.061 [pool-2-thread-4] INFO  com.intuit.karate - [print] El valor de userId es: 1024 
+11:45:17.067 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/auth/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 55
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "username": "leora.kemmer",
+  "password": "Frank N. Sense"
+}
+
+
+11:45:17.210 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/order/new
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "customer": "Fia",
+  "address": "66787 Rodrick Track, South Alfonsoton, LA 76644"
+}
+
+
+11:45:17.216 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/order/new
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "customer": "Fia",
+  "address": "Apt. 140 606 Wolf Fall, West Jadabury, NC 60069"
+}
+
+
+11:45:17.222 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/order/new
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "customer": "Smithing Master Hewg",
+  "address": "14384 Okuneva Greens, Carlostown, KY 65763"
+}
+
+
+11:45:17.313 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 345
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 231
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: ea86841b-a1ae-4880-b407-ee2601053fed
+1 < x-amzn-Remapped-Content-Length: 231
+1 < x-amz-apigw-id: JCo05EknIAMF8rg=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"e7-qlshAJUnWi+5mVkIay/sqslc+tU"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-1bd24cd3697de20d774281e4;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 9ad91637379eaae78e4869a87ce15904.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: _2Rmy4SGpYqVBeX5U-3PQpdzQe5ewTuCSNCL9mRn6FzinJqKmRgG6A==
+{
+  "id": 1055385,
+  "name": "Mustard",
+  "description": "Abel N. Willan",
+  "manufacturer": "International Metrics Associate",
+  "category": "Pappardelle alla Bolognese",
+  "price": 437,
+  "created": "2023-08-02T16:45:18.000Z",
+  "status": "active",
+  "tags": "red"
+}
+
+
+11:45:17.353 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:17.389 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Tree Nuts",
+  "price": 271,
+  "manufacturer": "Customer Division Facilitator",
+  "category": "Cauliflower Penne",
+  "description": "Jerry Atrics",
+  "tags": "cyan"
+}
+
+
+11:45:17.435 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 366
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 196
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < x-amzn-RequestId: d1ddf26c-700e-451c-89f7-869578025ddc
+2 < x-amzn-Remapped-Content-Length: 196
+2 < x-amz-apigw-id: JCo06GmqIAMF3qA=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"c4-J2j/Hv0raPNjg+Wwa/q5Pcqll3s"
+2 < X-Amzn-Trace-Id: Root=1-64ca881f-27d5857540bd145202d66d83;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 2d421cb55f565ff4c38cbaaf0ba2f1a2.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: Bk2eQkkcm3g3wTCgr_sU89d9-B6mjVESQydeIf5c8NC7JOoUOYRklw==
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlb3JhLmtlbW1lciIsInN1YiI6MTAyNCwiaWF0IjoxNjkwOTk0NzE5LCJleHAiOjE2OTA5OTUzMTl9.gbPQDzH_kG7huAbaOhY3d1fEX8D4AtglTkYtBS9sASg"
+}
+
+
+11:45:17.441 [pool-2-thread-4] INFO  com.intuit.karate - [print] este es el codigo del token -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlb3JhLmtlbW1lciIsInN1YiI6MTAyNCwiaWF0IjoxNjkwOTk0NzE5LCJleHAiOjE2OTA5OTUzMTl9.gbPQDzH_kG7huAbaOhY3d1fEX8D4AtglTkYtBS9sASg 
+11:45:17.444 [pool-2-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'order' with new value: call read('classpath:Helpers/orden.feature')
+11:45:17.496 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 154
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Soy",
+  "price": 461,
+  "manufacturer": "Dynamic Division Producer",
+  "category": "Pasta with Tomato and Basil",
+  "description": "Abel N. Willan",
+  "tags": "red"
+}
+
+
+11:45:17.541 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 329
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 154
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: e95c09ad-448e-4c7e-ab0e-d25fd5d12270
+1 < x-amzn-Remapped-Content-Length: 154
+1 < x-amz-apigw-id: JCo07HTKIAMFacw=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"9a-42okq6LGTVWmc5yy2+Mr3g6qWuA"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-0459fc02091fd0771ade567e;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 88f7ebddb30e2ad66fd08ed30bdd6e32.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: FokIvQvD96GsrfE02LTBT6Z8XWNvgNcpXcIkm2Xipfwd5jIu7H3QVA==
+{
+  "id": 72995,
+  "created": "2023-08-02T16:45:19.000Z",
+  "customer": "Fia",
+  "address": "66787 Rodrick Track, South Alfonsoton, LA 76644",
+  "status": "open",
+  "user": null
+}
+
+
+11:45:17.546 [pool-2-thread-3] INFO  com.intuit.karate - [print] ------------------------- 72995 
+11:45:17.551 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/order/72995/product
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 33
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "productId": 1055387,
+  "amount": 47
+}
+
+
+11:45:17.554 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 337
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 154
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: 75dab4b9-095a-4862-b78c-004bb4a71acd
+1 < x-amzn-Remapped-Content-Length: 154
+1 < x-amz-apigw-id: JCo07E-LoAMFcRQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"9a-X4VGp3lqPGEG+5c0ShKcA41ZI1I"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-4491de0b1d0fc6393580f9ba;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 17db4807d58bcfc1f64f48f46ec61120.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: HerOHcYs7ooAt21E1TwLHeqIg65Kth9ecqVB3DpwkEZplfb8AwECMQ==
+{
+  "id": 72996,
+  "created": "2023-08-02T16:45:19.000Z",
+  "customer": "Fia",
+  "address": "Apt. 140 606 Wolf Fall, West Jadabury, NC 60069",
+  "status": "open",
+  "user": null
+}
+
+
+11:45:17.558 [pool-2-thread-2] INFO  com.intuit.karate - [print] ------------------------- 72996 
+11:45:17.565 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/order/72996/product
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 32
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "productId": 1055386,
+  "amount": 9
+}
+
+
+11:45:17.569 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 345
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 166
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: 9526c4dc-3dbe-4bea-95f2-0e98a0054a76
+1 < x-amzn-Remapped-Content-Length: 166
+1 < x-amz-apigw-id: JCo07F-kIAMFUmw=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"a6-me1FMHDxuHiJYpnpuyJslCp2GFw"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-6491b2d3723e1fb238b7c00d;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 fc35ef111c1094afc1f2d15f87a34bee.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: 7T8ShnnG_EeTv-Z9HiAjVh0FIhs47VpWjHX8hSOSHo4QUkCENAW5AA==
+{
+  "id": 72997,
+  "created": "2023-08-02T16:45:19.000Z",
+  "customer": "Smithing Master Hewg",
+  "address": "14384 Okuneva Greens, Carlostown, KY 65763",
+  "status": "open",
+  "user": null
+}
+
+
+11:45:17.575 [pool-2-thread-1] INFO  com.intuit.karate - [print] ------------------------- 72997 
+11:45:17.580 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/order/72997/product
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 33
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "productId": 1055388,
+  "amount": 57
+}
+
+
+11:45:17.688 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 190
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 222
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: c07259f4-8a0d-4485-991a-a07034977a8e
+1 < x-amzn-Remapped-Content-Length: 222
+1 < x-amz-apigw-id: JCo08FDNIAMFr0g=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"de-QgM7klNkMRQrskd5vEqJElS76H4"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-740654dc08ed102b4cab8913;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 069671f47f4c7a651af36ea1cec65f74.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: uCGZE6rPpbKIoyZXhcqceugZRX9IQp1BKjVqa4Wo5aJTsSZ_EAw5cQ==
+{
+  "id": 1055389,
+  "name": "Soy",
+  "description": "Abel N. Willan",
+  "manufacturer": "Dynamic Division Producer",
+  "category": "Pasta with Tomato and Basil",
+  "price": 461,
+  "created": "2023-08-02T16:45:19.000Z",
+  "status": "active",
+  "tags": "red"
+}
+
+
+11:45:17.707 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/order/new
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "customer": "Irina",
+  "address": "Suite 712 4935 Osinski Shores, Taraland, OK 54432"
+}
+
+
+11:45:17.743 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 350
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 221
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: ce16aee7-b693-46d4-ac10-0229378a28bb
+1 < x-amzn-Remapped-Content-Length: 221
+1 < x-amz-apigw-id: JCo09F3voAMFroA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"dd-LhKIoU/6R5DVM+uoseLRrJBPZ60"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-4303bf1c49960a131dff7cc3;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 9c616eaf86921af6212cb1fc8e4f14aa.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: l5VD3rO0MJLHHa8EjtgiuaxXEhsVSmmoMYMuyOK585OulrIL15oASg==
+{
+  "id": 1055390,
+  "name": "Tree Nuts",
+  "description": "Jerry Atrics",
+  "manufacturer": "Customer Division Facilitator",
+  "category": "Cauliflower Penne",
+  "price": 271,
+  "created": "2023-08-02T16:45:19.000Z",
+  "status": "active",
+  "tags": "cyan"
+}
+
+
+11:45:17.754 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > DELETE https://mystoreapi.com/catalog/product/1055390
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:17.759 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 205
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 47
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < x-amzn-RequestId: 5e38c1ed-12e4-4ca5-b3f2-6a4f2e9e3b9d
+2 < x-amzn-Remapped-Content-Length: 47
+2 < x-amz-apigw-id: JCo09F6roAMFknQ=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"2f-cgdxvZQykb2dZGQXiXk7WVMvb3k"
+2 < X-Amzn-Trace-Id: Root=1-64ca881f-4aec829d247ee22446708450;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 d2a8ed168561f3bc7e1197e90d2c7298.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: JKFHem7pEa7Tx1ZxGuI8dx2WMULd2FTd3NMb1Bc225Xq6jDGTrMDMg==
+[
+  {
+    "order": 72995,
+    "product": 1055387,
+    "amount": 47
+  }
+]
+
+
+11:45:17.799 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 217
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 47
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < x-amzn-RequestId: d0f1997d-d52f-432b-80ea-7ce54b3e2f19
+2 < x-amzn-Remapped-Content-Length: 47
+2 < x-amz-apigw-id: JCo09EQOIAMF2YQ=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"2f-0zSMPRAsRLlXzoUyDr8VpeLoSGo"
+2 < X-Amzn-Trace-Id: Root=1-64ca881f-69580037456d92794dd5c8ee;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 9c100894a6989e860712c14c4867bd0a.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: r3QlddFb5nXMqdbIXJ7-Kktt8nrMjHU_5__1Hsw8sud2zrSZiwfmhA==
+[
+  {
+    "order": 72997,
+    "product": 1055388,
+    "amount": 57
+  }
+]
+
+
+11:45:17.815 [pool-2-thread-1] INFO  com.intuit.karate - [print] ------------------------- 1055388 
+11:45:17.815 [pool-2-thread-3] INFO  com.intuit.karate - [print] ------------------------- 1055387 
+11:45:17.820 [pool-2-thread-3] INFO  com.intuit.karate - [print] ------------------------- 1055387 
+11:45:17.822 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://mystoreapi.com/order/72997
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:17.824 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://mystoreapi.com/order/72995/product/1055387
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:17.905 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 196
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 158
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: 738795a7-b201-40a9-852a-6f6db0034867
+1 < x-amzn-Remapped-Content-Length: 158
+1 < x-amz-apigw-id: JCo0_FOxIAMF0eg=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"9e-BA6nuMpnQZzGIIX3RGXXKdwtevM"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-7a95e8b86a4a5ed945396b3c;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 2e8010b39acc99d1371b96a5f3d32b6a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: DjArYcTCpBj_GayN_eK-Idi55WkGYi7HKvBg1NgRz8j8hC-qfzrESw==
+{
+  "id": 72998,
+  "created": "2023-08-02T16:45:19.000Z",
+  "customer": "Irina",
+  "address": "Suite 712 4935 Osinski Shores, Taraland, OK 54432",
+  "status": "open",
+  "user": null
+}
+
+
+11:45:17.910 [pool-2-thread-4] INFO  com.intuit.karate - [print] ------------------------- 72998 
+11:45:17.911 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 345
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 46
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < x-amzn-RequestId: b70ec587-ee0e-4659-a420-9b7a0d285f1a
+2 < x-amzn-Remapped-Content-Length: 46
+2 < x-amz-apigw-id: JCo0-Hi7IAMFkZQ=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"2e-wQXVUOAWq1OCHVzgYpvzv4YSI3Q"
+2 < X-Amzn-Trace-Id: Root=1-64ca881f-0660b497713bd1245b51d139;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 afa872536bf18addc6b9bc49f0000210.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: 3muasvCZUBO6PzKTZnZc0ZvAPb9wLJ4o8Ur_t4MtLb2eEtwis9W3lg==
+[
+  {
+    "order": 72996,
+    "product": 1055386,
+    "amount": 9
+  }
+]
+
+
+11:45:17.916 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/order/72998/product
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 33
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "productId": 1055389,
+  "amount": 81
+}
+
+
+11:45:17.917 [pool-2-thread-2] INFO  com.intuit.karate - [print] ------------------------- 1055386 
+11:45:17.922 [pool-2-thread-2] INFO  com.intuit.karate - [print] ------------------------- 72996 
+11:45:17.926 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://mystoreapi.com/order/72996
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:18.032 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 207
+1 < 200
+1 < Content-Type: text/plain; charset=utf8
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: e06bd0e1-cb48-47cc-a2de-b6a509206a98
+1 < x-amzn-Remapped-Content-Length: 0
+1 < x-amz-apigw-id: JCo1AExvoAMFgug=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-2db30ffb739f30d636507bbc;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 7808e8f539edaee36c1b66ee6e4969d4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: pzLMgSdFZ3yhJVnz4ZeCM1vGVjtNEc2U16Yle-7wvXNF4C6bF593lQ==
+
+
+11:45:18.037 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 212
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 314
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: 26859073-d43c-4bee-979e-a48c579ace01
+1 < x-amzn-Remapped-Content-Length: 314
+1 < x-amz-apigw-id: JCo1AFumIAMFX2w=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"13a-rzWaC/IOOskOX4JKHLC+Lfw2h0c"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-7764affd006d535f1f979661;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 6e1f0172b684caca2f66247f5ad9eea0.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: 66gSZJXaDPJ614uM4_7o1KALFdN8F-W7QMQp0G5d1aYd2sCU6zdnXQ==
+{
+  "order": {
+    "id": 72997,
+    "created": "2023-08-02T16:45:19.000Z",
+    "customer": "Smithing Master Hewg",
+    "address": "14384 Okuneva Greens, Carlostown, KY 65763",
+    "status": "open",
+    "user": null
+  },
+  "items": [
+    {
+      "id": 1055388,
+      "name": "Fish",
+      "category": "Chicken Fajitas",
+      "price": 183,
+      "amount": 57
+    }
+  ],
+  "summary": {
+    "totalCost": 10431,
+    "totalItems": 57
+  }
+}
+
+
+11:45:18.047 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.057 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.078 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/auth/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 56
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "username": "lamar.boehm",
+  "password": "Joaquin DeFlores"
+}
+
+
+11:45:18.092 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 335
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: bcbdcaaf-ef5a-460e-83e0-fffeeb63cb0c
+1 < x-amzn-Remapped-Content-Length: 35
+1 < x-amz-apigw-id: JCo1AEriIAMFuMQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"23-2OkmZgU7Wy43/d9ih2JwMUWZWKo"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-4f45ede77dc4b8047e2a3bfc;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 c9c5e7596582e81eaf731e0b573c09bc.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: GffylgPWcNirA3Ru6D_S_a_BlIzCYnAwqzYOWXxkJ63CQvI9c49KZg==
+{
+  "id": "1055390",
+  "status": "deleted"
+}
+
+
+11:45:18.100 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/auth/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "username": "walker.abshire",
+  "password": "Maude L. T. Ford"
+}
+
+
+11:45:18.108 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.140 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/auth/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "username": "karleen.hahn",
+  "password": "Harry Caray"
+}
+
+
+11:45:18.257 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 330
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 20
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < x-amzn-RequestId: d676b9db-00fb-4e06-bc87-34469f52b62f
+1 < x-amzn-Remapped-Content-Length: 20
+1 < x-amz-apigw-id: JCo1CHLNoAMFVFA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"14-YX4pkByYWT7jjS8xlIlKjspRVw8"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-5fc19bfe7491ae6e0d5c64f5;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 9c616eaf86921af6212cb1fc8e4f14aa.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: I9qv7RN0mmqHOoQtyUtlGj9kQpAoAFaAnSlJ9YiYJx5v-7P6JylVLw==
+{
+  "status": "deleted"
+}
+
+
+11:45:18.257 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 339
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 47
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < x-amzn-RequestId: 4cabc908-9aa1-4c15-868c-a4915ef25e9f
+2 < x-amzn-Remapped-Content-Length: 47
+2 < x-amz-apigw-id: JCo1CGSHIAMFpMw=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"2f-PjZeGyNDPmeuDMZXLaZENjpbPsg"
+2 < X-Amzn-Trace-Id: Root=1-64ca881f-07e0b5990ea5ef226b14e11a;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:19 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 20a4932de861d5f21104db34596c9034.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: hgiJzM5m_xoLXuthbZkWgQkJaIjs33DNadvewfetG7K1KCoYuGWZnw==
+[
+  {
+    "order": 72998,
+    "product": 1055389,
+    "amount": 81
+  }
+]
+
+
+11:45:18.262 [pool-2-thread-4] INFO  com.intuit.karate - [print] ------------------------- 1055389 
+11:45:18.267 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.268 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/order/72998/place
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlb3JhLmtlbW1lciIsInN1YiI6MTAyNCwiaWF0IjoxNjkwOTk0NzE5LCJleHAiOjE2OTA5OTUzMTl9.gbPQDzH_kG7huAbaOhY3d1fEX8D4AtglTkYtBS9sASg
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:18.302 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 137
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: 0d5ce7d4-1fac-413a-930c-7a2c4dc6d59d
+1 < x-amzn-Remapped-Content-Length: 137
+1 < x-amz-apigw-id: JCo1CEvYoAMFjSg=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"89-0Fry8aXcL2m19F+m1q3Y45DbWwo"
+1 < X-Amzn-Trace-Id: Root=1-64ca881f-062b99c07b6def482a1cf503;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 d469b242ea9735def0b70af5a09c94c0.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: AG3shbz6ZFhF024Ki8X-FDufpRZcZkdPuhnj6B4AW4MCpnzZ4CgBqg==
+{
+  "id": 1025,
+  "username": "lamar.boehm",
+  "created": "2023-08-02T16:45:20.000Z",
+  "password": "c9726bd0ed68cb7e2c61a9edf4dbc0fe",
+  "status": "active"
+}
+
+
+11:45:18.307 [pool-2-thread-3] INFO  com.intuit.karate - [print] El valor de userId es: 1025 
+11:45:18.311 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/auth/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 56
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "username": "lamar.boehm",
+  "password": "Joaquin DeFlores"
+}
+
+
+11:45:18.314 [pool-2-thread-2] INFO  com.intuit.karate - [print] ------------------> 15 
+11:45:18.331 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 162
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "Wheat and triticale",
+  "price": 15,
+  "manufacturer": "Central Response Orchestrator",
+  "category": "Pasta and Beans",
+  "description": "Robin DeCraydle",
+  "tags": "red"
+}
+
+
+11:45:18.359 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 256
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 140
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: 6cdcadd5-b65e-4fa0-9603-73643d52cb7b
+1 < x-amzn-Remapped-Content-Length: 140
+1 < x-amz-apigw-id: JCo1DHfkoAMFigQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"8c-mV/1ygPZnime+4RIinYOLwneUu0"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-4496aad7727a413551dc0cb4;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 b0769aa3a5fd944d4e8b53fc0502c60a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: YscXraj3XVgcPDJ-uRFZdFDyg_Yk4JGcxdGBmzoUX3lNuR6JUQA5wA==
+{
+  "id": 1026,
+  "username": "walker.abshire",
+  "created": "2023-08-02T16:45:20.000Z",
+  "password": "2bed88f17d31d2caa2a5f4f4cc53bfef",
+  "status": "active"
+}
+
+
+11:45:18.364 [pool-2-thread-1] INFO  com.intuit.karate - [print] El valor de userId es: 1026 
+11:45:18.368 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/auth/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 59
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "username": "walker.abshire",
+  "password": "Maude L. T. Ford"
+}
+
+
+11:45:18.503 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 361
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 138
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: 4dac4c7a-b958-4640-88b0-731681878154
+1 < x-amzn-Remapped-Content-Length: 138
+1 < x-amz-apigw-id: JCo1EFQPoAMFwtA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"8a-huX4+32+6whvrX4lWGDGSe2EMT4"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-46149ba1405ea41871458b93;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 7be5aeffc4be446098dbbdded7f32774.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: t0umZrgEud333HJ1nB6-46mp-jI4eWbM5I8IqGkSwTEIW1trSssk1w==
+{
+  "id": 1027,
+  "username": "karleen.hahn",
+  "created": "2023-08-02T16:45:20.000Z",
+  "password": "03920b32bad26e69554742821ae9c1c3",
+  "status": "active"
+}
+
+
+11:45:18.503 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 191
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 195
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < x-amzn-RequestId: 0517943b-de6c-40f6-86ce-49d7e36ba419
+2 < x-amzn-Remapped-Content-Length: 195
+2 < x-amz-apigw-id: JCo1FGWlIAMFgEQ=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"c3-ZaK5dHNcB7+WWy4KiH48poWzGrw"
+2 < X-Amzn-Trace-Id: Root=1-64ca8820-122b34732e376fc80af0fb5a;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 9ad91637379eaae78e4869a87ce15904.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: mraw58CC_lpsO1028K07xJ1djoNPEr963hN0hcNAQ29VBCBufBXj2Q==
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWFyLmJvZWhtIiwic3ViIjoxMDI1LCJpYXQiOjE2OTA5OTQ3MjAsImV4cCI6MTY5MDk5NTMyMH0.emcZ34bST2mFkjUQTwdkNKVrh9GVrbOAgjsr0461vYY"
+}
+
+
+11:45:18.507 [pool-2-thread-5] INFO  com.intuit.karate - [print] El valor de userId es: 1027 
+11:45:18.507 [pool-2-thread-3] INFO  com.intuit.karate - [print] este es el codigo del token -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWFyLmJvZWhtIiwic3ViIjoxMDI1LCJpYXQiOjE2OTA5OTQ3MjAsImV4cCI6MTY5MDk5NTMyMH0.emcZ34bST2mFkjUQTwdkNKVrh9GVrbOAgjsr0461vYY 
+11:45:18.511 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://mystoreapi.com/auth/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 52
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+{
+  "username": "karleen.hahn",
+  "password": "Harry Caray"
+}
+
+
+11:45:18.513 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://mystoreapi.com/auth/me
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWFyLmJvZWhtIiwic3ViIjoxMDI1LCJpYXQiOjE2OTA5OTQ3MjAsImV4cCI6MTY5MDk5NTMyMH0.emcZ34bST2mFkjUQTwdkNKVrh9GVrbOAgjsr0461vYY
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:18.609 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 238
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 199
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < x-amzn-RequestId: 2ba1132e-8cb1-44fc-b5e8-6e2b6aca3032
+2 < x-amzn-Remapped-Content-Length: 199
+2 < x-amz-apigw-id: JCo1FEmxIAMFnMA=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"c7-rbkxQM57xmEY4vhgUzVNxomZ8S4"
+2 < X-Amzn-Trace-Id: Root=1-64ca8820-6ac8762b1b7c4ace565c940c;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 22f93d92a360e7503437b796bfa15524.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: YpOJWBLICWIo_v7zmlXyY4wBW1JfJdVOt7eGA_xXS0REs_-PEgpGag==
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbGtlci5hYnNoaXJlIiwic3ViIjoxMDI2LCJpYXQiOjE2OTA5OTQ3MjAsImV4cCI6MTY5MDk5NTMyMH0.8GrgEp_ymPzdpCi8K0vvo_A9HUPyVU6I2FebHAAcKRM"
+}
+
+
+11:45:18.616 [pool-2-thread-1] INFO  com.intuit.karate - [print] este es el codigo del token -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbGtlci5hYnNoaXJlIiwic3ViIjoxMDI2LCJpYXQiOjE2OTA5OTQ3MjAsImV4cCI6MTY5MDk5NTMyMH0.8GrgEp_ymPzdpCi8K0vvo_A9HUPyVU6I2FebHAAcKRM 
+11:45:18.623 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 353
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 161
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: a6981546-b749-4962-b9d8-ddcaff88d150
+1 < x-amzn-Remapped-Content-Length: 161
+1 < x-amz-apigw-id: JCo1GETcIAMFfVw=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"a1-GrL7h1GX3ThARN9xNJ/AvXS64Rk"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-2cbc751241b72745393fcc1f;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 fc35ef111c1094afc1f2d15f87a34bee.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: 7XMn7f5S4CZL_g5IKbel3ECagT-n5gWGpEnIE63ZgVoRSISclAcBPw==
+{
+  "id": 72998,
+  "created": "2023-08-02T16:45:19.000Z",
+  "customer": "Irina",
+  "address": "Suite 712 4935 Osinski Shores, Taraland, OK 54432",
+  "status": "ordered",
+  "user": 1024
+}
+
+
+11:45:18.629 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > GET https://mystoreapi.com/order/my
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxlb3JhLmtlbW1lciIsInN1YiI6MTAyNCwiaWF0IjoxNjkwOTk0NzE5LCJleHAiOjE2OTA5OTUzMTl9.gbPQDzH_kG7huAbaOhY3d1fEX8D4AtglTkYtBS9sASg
+2 > Host: mystoreapi.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:45:18.629 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://mystoreapi.com/auth/me
+1 > Accept: application/json
+1 > Authorization: Bearer sxgsfgadsfgscsdacasg
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:45:18.670 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 337
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 230
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: b8b0dd39-6484-4358-ac77-0fd06e829ab0
+1 < x-amzn-Remapped-Content-Length: 230
+1 < x-amz-apigw-id: JCo1GGYNIAMFVJQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"e6-yfwVtHwfsDHEUzSgl0++ne5xrqU"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-65ad8cf61a11671f6e8707d8;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 d2a8ed168561f3bc7e1197e90d2c7298.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: hIX7Q36jCmnfLvcX-c9tGwRSnP8XJMEQ00qOjxoYostY-Ja5w9HD9g==
+{
+  "id": 1055391,
+  "name": "Wheat and triticale",
+  "description": "Robin DeCraydle",
+  "manufacturer": "Central Response Orchestrator",
+  "category": "Pasta and Beans",
+  "price": 15,
+  "created": "2023-08-02T16:45:20.000Z",
+  "status": "active",
+  "tags": "red"
+}
+
+
+11:45:18.682 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.691 [pool-2-thread-2] INFO  com.intuit.karate - [print] ------------------> 2 
+11:45:18.714 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "test",
+  "price": 2,
+  "manufacturer": "Human Paradigm Representative",
+  "category": "Vegetable Soup",
+  "description": "Parker Carr",
+  "tags": "lime"
+}
+
+
+11:45:18.825 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 312
+2 < 201
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 196
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < x-amzn-RequestId: 7155b44d-da17-4486-9eb6-328f52b6e8ac
+2 < x-amzn-Remapped-Content-Length: 196
+2 < x-amz-apigw-id: JCo1IHM_IAMF2Cg=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"c4-jo+ZpHDt7NZips7RamJkN/YEH+s"
+2 < X-Amzn-Trace-Id: Root=1-64ca8820-292a183111a936f30578f25c;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 9c100894a6989e860712c14c4867bd0a.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: lybqIc8VNarl-nuFIuGs0u2bFG64a0ajkZGYkEhqqLG2ofl2GhN7vw==
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthcmxlZW4uaGFobiIsInN1YiI6MTAyNywiaWF0IjoxNjkwOTk0NzIwLCJleHAiOjE2OTA5OTUzMjB9.sMdVMaoRon0ETU607GzNKVk4K8cdaE4rCZ92wMdlRQg"
+}
+
+
+11:45:18.829 [pool-2-thread-5] INFO  com.intuit.karate - [print] este es el codigo del token -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthcmxlZW4uaGFobiIsInN1YiI6MTAyNywiaWF0IjoxNjkwOTk0NzIwLCJleHAiOjE2OTA5OTUzMjB9.sMdVMaoRon0ETU607GzNKVk4K8cdaE4rCZ92wMdlRQg 
+11:45:18.832 [pool-2-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'auth' with new value: call read('classpath:Helpers/Auth.js') {username:'karate123' , password:'karate123'}
+11:45:18.844 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 330
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 91
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: 5fceb248-651c-42ef-aa37-cc9527de9f0c
+1 < x-amzn-Remapped-Content-Length: 91
+1 < x-amz-apigw-id: JCo1IF01oAMFk-Q=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"5b-M3zXpQdxBG70tN7O4ouUIhTPZ3g"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-0c1535754e8db7f26f9da93d;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 2ad057bf121e413ac1cb61fa8b16d64a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: m8FHuUV85llRnpgjD51RoX9R5jbDLRnuNgHsz9s7jRFaccElHr7Y4g==
+{
+  "id": 1025,
+  "username": "lamar.boehm",
+  "created": "2023-08-02T16:45:20.000Z",
+  "status": "active"
+}
+
+
+11:45:18.876 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.877 [pool-2-thread-5] ERROR com.intuit.karate - classpath:Store/features/autenticador.feature:30
+* def auth = call read('classpath:Helpers/Auth.js') {username:'karate123' , password:'karate123'}
+Cannot read the array length because "src" is null
+classpath:Store/features/autenticador.feature:30
+11:45:18.893 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 112
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "test 1",
+  "price": 856,
+  "manufacturer": "Usability",
+  "category": "Tiramisù",
+  "description": "Ida",
+  "tags": "csv"
+}
+
+
+11:45:18.896 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:18.911 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://mystoreapi.com/catalog/product
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: mystoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "test 2",
+  "price": 101,
+  "manufacturer": "Bruschette",
+  "category": "Wright",
+  "description": "tan",
+  "tags": "csv"
+}
+
+
+11:45:18.978 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 348
+2 < 200
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 174
+2 < Connection: keep-alive
+2 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < x-amzn-RequestId: 9a11f205-08a1-4e5e-b525-87c583ab97e0
+2 < x-amzn-Remapped-Content-Length: 174
+2 < x-amz-apigw-id: JCo1JFDdoAMFTQw=
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: Express
+2 < Etag: W/"ae-h4zdUcnrEIwxTHWMpD7a8Vnnz9M"
+2 < X-Amzn-Trace-Id: Root=1-64ca8820-1cfac22412976a3c6c69b11f;Sampled=0;lineage=1dfeef2e:0
+2 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 34a80a466446d2f079dddf146048d8b8.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOG50-P1
+2 < X-Amz-Cf-Id: gHVJTUUHCXbuXFbmSzLF21xcJLkBSs_eMTs3Ryhy3U0aIiOGAzrNEQ==
+{
+  "orders": [
+    {
+      "id": 72998,
+      "created": "2023-08-02T16:45:19.000Z",
+      "customer": "Irina",
+      "address": "Suite 712 4935 Osinski Shores, Taraland, OK 54432",
+      "status": "ordered",
+      "user": 1024
+    }
+  ]
+}
+
+
+11:45:18.989 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 359
+1 < 401
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: 6b2e7a9c-fddf-4d79-af9a-80e53cacf477
+1 < x-amzn-Remapped-Content-Length: 43
+1 < x-amz-apigw-id: JCo1JE4QIAMFTYQ=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"2b-hGShxOkieaAVDloBubJVM+h58D8"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-02de90f74519f2f4371c84f1;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 fc35ef111c1094afc1f2d15f87a34bee.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: jIegxPcKVM2eWs-aJfCw0d9OdHYr9v5t149VhqlqAfCNnaggTObatQ==
+{
+  "statusCode": 401,
+  "message": "Unauthorized"
+}
+
+
+11:45:19.077 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 362
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 210
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: e8fffa55-0919-4302-8ff0-4bf496fca77c
+1 < x-amzn-Remapped-Content-Length: 210
+1 < x-amz-apigw-id: JCo1KE4AIAMFTEA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"d2-e2sRBEyELzUYMaThhnGQ9R0JPs0"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-5fd1dd602a03e3e2577b6606;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 d2a8ed168561f3bc7e1197e90d2c7298.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: 4eOpR6EjbzRVSPl8gl4S0Ja1uLfa4lQ7OwSlHd9T44vgQvfunZ5PAQ==
+{
+  "id": 1055392,
+  "name": "test",
+  "description": "Parker Carr",
+  "manufacturer": "Human Paradigm Representative",
+  "category": "Vegetable Soup",
+  "price": 2,
+  "created": "2023-08-02T16:45:20.000Z",
+  "status": "active",
+  "tags": "lime"
+}
+
+
+11:45:19.213 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 318
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: e6d6d3aa-5cbf-46ac-a9f3-e7ee41aaca46
+1 < x-amzn-Remapped-Content-Length: 180
+1 < x-amz-apigw-id: JCo1MHxKoAMF4hg=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"b4-rACC3PUa5UX599ylX+ctFm94Jkw"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-0c24cc195ea01efe4996530e;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 afa872536bf18addc6b9bc49f0000210.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: JZzt74-y17opEg9JjGQt8bsCe10ppa3peWJHknbNzBZ9p82NmhA9zw==
+{
+  "id": 1055393,
+  "name": "test 1",
+  "description": "Ida",
+  "manufacturer": "Usability",
+  "category": "Tiramisù",
+  "price": 856,
+  "created": "2023-08-02T16:45:20.000Z",
+  "status": "active",
+  "tags": "csv"
+}
+
+
+11:45:19.240 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 328
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 178
+1 < Connection: keep-alive
+1 < Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < x-amzn-RequestId: ec95786f-7389-4cf7-a1a4-f4fd616a0c3e
+1 < x-amzn-Remapped-Content-Length: 178
+1 < x-amz-apigw-id: JCo1MEALoAMFWZA=
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+1 < Etag: W/"b2-l7dFqd8YTM7cK+4DS7O85vJ1IDI"
+1 < X-Amzn-Trace-Id: Root=1-64ca8820-2a575ac919763c2151a8781f;Sampled=0;lineage=1dfeef2e:0
+1 < x-amzn-Remapped-Date: Wed, 02 Aug 2023 16:45:20 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 6caf0a7ff8371450e2caa64a55d6ca68.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOG50-P1
+1 < X-Amz-Cf-Id: 2FFUhDDbNa_Nyi3Jo0CMbtnZDHw8BNJxB8StODZdG-np8II_54S_Nw==
+{
+  "id": 1055394,
+  "name": "test 2",
+  "description": "tan",
+  "manufacturer": "Bruschette",
+  "category": "Wright",
+  "price": 101,
+  "created": "2023-08-02T16:45:20.000Z",
+  "status": "active",
+  "tags": "csv"
+}
+
+
+---------------------------------------------------------
+feature: classpath:Store/features/adminOrden.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 7,4780
+---------------------------------------------------------
+
+11:45:19.948 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:Store/features/adminOrden.feature
+---------------------------------------------------------
+feature: classpath:Store/features/adminPedidos.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 3,3619
+---------------------------------------------------------
+
+11:45:20.225 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:Store/features/adminPedidos.feature
+---------------------------------------------------------
+feature: classpath:Store/features/adminProductos.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,4587
+---------------------------------------------------------
+
+11:45:20.418 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:Store/features/adminProductos.feature
+---------------------------------------------------------
+feature: classpath:Store/features/autenticador.feature
+scenarios:  3 | passed:  2 | failed:  1 | time: 2,4914
+---------------------------------------------------------
+
+11:45:20.700 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:Store/features/autenticador.feature
+---------------------------------------------------------
+feature: classpath:Store/features/crearProductos.feature
+scenarios:  4 | passed:  4 | failed:  0 | time: 1,4563
+---------------------------------------------------------
+
+11:45:20.837 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Store/features/crearProductos.feature
+Karate version: 1.4.0
+======================================================
+elapsed:   6,90 | threads:    5 | thread time: 17,25 
+features:     5 | skipped:    0 | efficiency: 0,50
+scenarios:   13 | passed:    12 | failed: 1
+======================================================
+>>> failed features:
+Cannot read the array length because "src" is null
+classpath:Store/features/autenticador.feature:30
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.4.0
+file:///C:/Users/Diego%20Ramirez/IdeaProjects/UAT_Karate_MyStoreApi/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
